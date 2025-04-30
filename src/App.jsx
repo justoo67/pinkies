@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import CakeCategories from './components/CakeCategories';
-import Footer from './components/Footer';
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import CakeCategory from './components/pages/CakeCategory';
+import Navbar from './components/Navbar.jsx';
+import Hero from './components/Hero.jsx';
+import CakeCategories from './components/CakeCategories.jsx';
+import Footer from './components/Footer.jsx';
+import About from './components/pages/About.jsx';
+import Contact from './components/pages/Contact.jsx';
+import CakeCategory from './components/pages/CakeCategory.jsx';
 
 const App = () => {
   return (
