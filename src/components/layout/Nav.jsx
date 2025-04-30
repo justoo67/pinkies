@@ -1,20 +1,17 @@
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import Logo from "../images/logo.png";
 
 const Nav = () => {
   return (
     <>
       <div className="flex justify-around text-white bg-3-color-gradient h-108 py-5">
         <div>
-          <img src={Logo} alt="Logo" className="h-20"></img>
+          <img src="/logo.png" alt="Logo" className="h-20"></img>
         </div>
 
         <div>
-            
             <div className="flex items-center justify-between px-10 text-xl">
-
               <div className="flex items-center bg-white px-3 space-x-2 text-black">
                 <textarea className="h-10 border"> </textarea>
                 <FaMagnifyingGlass />
@@ -26,7 +23,6 @@ const Nav = () => {
                   <FaShoppingCart />
                 </a>
               </div>
-
             </div>
 
           <div className="">
@@ -60,4 +56,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav; 

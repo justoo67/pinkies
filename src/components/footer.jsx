@@ -1,49 +1,75 @@
-import Logo from "../images/logo.png";
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
   return (
-    <>
-      <div className="bg-customBlue p-10 text-white h-100">
-        <div className="flex justify-around">
-            <img src={Logo} alt="Logo" className="h-16"></img>
-          <ol className="flex justify-between mx-10 col-white space-x-20">
-            <li className="flex flex-col text-white">
-              <h1 className="font-bold">Product</h1>
-              <a>Price list</a>
-              <a>Celebration insights</a>
-              <a>flavours</a>
-              <a>Cake size pricing</a>
-              <a>Reviews</a>
-            </li>
-
-            <li className="flex flex-col justify-around text-white">
-              <h1 className="font-bold">Social</h1>
-              <a>Facebook</a>
-              <a>Twitter</a>
-              <a>Instagram</a>
-            </li>
-
-            <li className="flex flex-col justify-around text-white">
-              <h1 className="font-bold">Support</h1>
-              <a>FAQs</a>
-              <a>Docs</a>
-              <a>Help</a>
-            </li>
-
-            <li className="flex flex-col justify-around text-white">
-              <h1 className="font-bold">Company</h1>
-              <a>About</a>
-              <a>Blog</a>
-              <a>Inclusion</a>
-              <a>Shop</a>
-            </li>
-          </ol>
+    <footer className="bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <p className="text-gray-300">
+              Phone: +254 723 174 434
+            </p>
+            <p className="text-gray-300 mt-2">
+              Email: info@nillavee.co.ke
+            </p>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="/" className="text-gray-300 hover:text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/cakes" className="text-gray-300 hover:text-white">
+                  Cakes
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-gray-300 hover:text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-gray-300 hover:text-white">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a
+                href="https://facebook.com/nillavee"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                Facebook
+              </a>
+              <a
+                href="https://instagram.com/nillavee"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                Instagram
+              </a>
+            </div>
+          </div>
         </div>
-        <div>footer</div>
+        
+        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Nillavee Cakes and Pastries. All rights reserved.</p>
+        </div>
       </div>
-    </>
+    </footer>
   );
 };
 
-export default Footer;
+export default Footer; 

@@ -7,8 +7,7 @@ const Info = () => {
   return (
     <>
       <div className="flex bg-white p-3 justify-center items-center space-x-3 my-20 ">
-      <div className="flex justify-center items-center shadow-md p-4 space-x-4 rounded bg-white">
-
+        <div className="flex justify-center items-center shadow-md p-4 space-x-4 rounded bg-white">
           <div className="flex ">
             <a className="flex text-pink-500 text-5xl">
               <FaTruck />
@@ -21,7 +20,6 @@ const Info = () => {
           </div>
         </div>
         <div className="flex space-x-4 justify-center items-center shadow-md p-4 px-2 rounded bg-white">
-
           <div>
             <a className="flex text-pink-500 text-4xl">
               <MdMicrowave />
@@ -49,4 +47,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Info; 

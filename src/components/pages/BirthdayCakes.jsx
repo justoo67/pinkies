@@ -1,6 +1,4 @@
 import React from "react";
-import Image1 from "../images/bc1.webp";
-import Image2 from "../images/bc2.webp";
 
 const BirthdayCakes = () => {
   return (
@@ -8,15 +6,22 @@ const BirthdayCakes = () => {
       {/* Image Section */}
       <div className="flex gap-4">
         <img
-          src={Image1}
+          src="/images/birthday-cake-1.jpg"
           alt="Birthday Cake 1"
           className="w-45 h-60 object-cover rounded-lg shadow-md"
         />
-        <img
-          src={Image2}
-          alt="Birthday Cake 2"
-          className="h-24 object-cover rounded-lg shadow-md"
-        />
+        <div className="flex flex-col gap-4">
+          <img
+            src="/images/birthday-cake-2.jpg"
+            alt="Birthday Cake 2"
+            className="h-24 w-32 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="/images/birthday-cake-3.jpg"
+            alt="Birthday Cake 3"
+            className="h-24 w-32 object-cover rounded-lg shadow-md"
+          />
+        </div>
       </div>
 
       {/* Text Section */}
@@ -36,4 +41,4 @@ const BirthdayCakes = () => {
   );
 };
 
-export default BirthdayCakes;
+export default BirthdayCakes; 
