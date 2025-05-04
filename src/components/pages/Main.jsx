@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../layout/Footer'
+import Footer from '../Footer.jsx'
 import Nav from '../layout/Nav';
 import Info from './Info';
 import Flavours from './Flavours';
